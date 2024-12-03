@@ -16,6 +16,7 @@ factory-boy = "^3.3.1"
 pytest = "^8.3.3"
 django-extensions = "^3.2.3"
 django-debug-toolbar = "^4.4.6"
+gitpython = "^3.1.43"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
