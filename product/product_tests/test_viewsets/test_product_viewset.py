@@ -34,11 +34,19 @@ class TestProductViewSet(APITestCase):
         product_data = json.loads(response.content)
 
         self.assertEqual(product_data["results"]
+<<<<<<< HEAD
+        [0]["title"], self.product.title)
+        self.assertEqual(product_data["results"]
+        [0]["price"], self.product.price)
+        self.assertEqual(product_data["results"]
+        [0]["active"], self.product.active)
+=======
                          [0]["title"], self.product.title)
         self.assertEqual(product_data["results"]
                          [0]["price"], self.product.price)
         self.assertEqual(product_data["results"]
                          [0]["active"], self.product.active)
+>>>>>>> add226a540c144d1fe9bdbf578428686cf1acc60
 
     def test_create_product(self):
         token = Token.objects.get(user__username=self.user.username)
